@@ -1,0 +1,7 @@
+
+environments:
+    url: http://dev.example.com
+    name: Developer Setup
+    servers:
+        - dev.example.com
+        - another.example.com
