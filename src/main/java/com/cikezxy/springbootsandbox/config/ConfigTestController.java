@@ -20,6 +20,9 @@ public class ConfigTestController {
     @Value("${my.uuid}")
     private String uuid;
 
+    @Value("${my.placeholder}")
+    private String placeHolder;
+
     @GetMapping(value = "/ymlConfig")
     public YmlEnvironmentConfig ymlEnvironmentConfig() {
         return ymlEnvironmentConfig;
@@ -33,5 +36,10 @@ public class ConfigTestController {
     @RequestMapping(value = "/uuid")
     public String uuid() {
         return uuid;
+    }
+
+    @RequestMapping(value = "/placeHolder")
+    public String placeHolder() {
+        return placeHolder;
     }
 }
