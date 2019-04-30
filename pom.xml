@@ -64,50 +64,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <!--<plugin>-->
-                <!--<groupId>org.jooq</groupId>-->
-                <!--<artifactId>jooq-codegen-maven</artifactId>-->
-                <!--<version>3.11.7</version>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<id>jooq-codegen</id>-->
-                        <!--<phase>generate-sources</phase>-->
-                        <!--<goals>-->
-                            <!--<goal>generate</goal>-->
-                        <!--</goals>-->
-                    <!--</execution>-->
-                <!--</executions>-->
-                <!--<dependencies>-->
-                    <!--<dependency>-->
-                        <!--<groupId>mysql</groupId>-->
-                        <!--<artifactId>mysql-connector-java</artifactId>-->
-                        <!--<version>8.0.13</version>-->
-                    <!--</dependency>-->
-                <!--</dependencies>-->
-                <!--<configuration>-->
-                    <!--<jdbc>-->
-                        <!--<driver>com.mysql.cj.jdbc.Driver</driver>-->
-                        <!--<url>jdbc:mysql://localhost:3306/sakila?useServerPrepStmts=false&amp;serverTimezone=GMT%2B8&amp;zeroDateTimeBehavior=convertToNull</url>-->
-                        <!--<user>root</user>-->
-                        <!--<password>123456</password>-->
-                    <!--</jdbc>-->
-                    <!--<generator>-->
-                        <!--<database>-->
-                            <!--<name>org.jooq.meta.mysql.MySQLDatabase</name>-->
-                            <!--<includes>.*</includes>-->
-                            <!--<excludes></excludes>-->
-                            <!--<inputSchema>sakila</inputSchema>-->
-                        <!--</database>-->
-                        <!--<target>-->
-                            <!--&lt;!&ndash; The destination package of your generated classes (within the-->
-                                <!--destination directory) &ndash;&gt;-->
-                            <!--<packageName>com.cikezxy.springbootsandbox.jooq.codegen</packageName>-->
-                            <!--&lt;!&ndash; The destination directory of your generated classes &ndash;&gt;-->
-                            <!--<directory>target/generated-sources/jooq</directory>-->
-                        <!--</target>-->
-                    <!--</generator>-->
-                <!--</configuration>-->
-            <!--</plugin>-->
         </plugins>
     </build>
 
