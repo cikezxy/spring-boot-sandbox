@@ -1,6 +1,5 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/sakila?useServerPrepStmts=false&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull
     username: root
     password: 123456
@@ -14,5 +13,6 @@ spring:
       max-lifetime: 1800000
       connection-timeout: 5000
       connection-test-query: SELECT 1
+    driver-class-name: com.mysql.cj.jdbc.Driver
   banner:
     location: classpath:banner.txt

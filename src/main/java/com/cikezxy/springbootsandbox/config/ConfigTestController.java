@@ -11,27 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 @PropertySource(value = "classpath:my.properties")
 public class ConfigTestController {
 
-    @Autowired
-    private YmlEnvironmentConfig ymlEnvironmentConfig;
-
-    @Value("${environments.url}")
-    private String url;
-
     @Value("${my.uuid}")
     private String uuid;
 
     @Value("${my.placeholder}")
     private String placeHolder;
-
-    @GetMapping(value = "/ymlConfig")
-    public YmlEnvironmentConfig ymlEnvironmentConfig() {
-        return ymlEnvironmentConfig;
-    }
-
-    @GetMapping(value = "/environmentsUrl")
-    public String environmentsUrl() {
-        return url;
-    }
 
     @RequestMapping(value = "/uuid")
     public String uuid() {
