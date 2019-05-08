@@ -2,9 +2,12 @@ package com.cikezxy.springbootsandbox.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
+
 import javax.annotation.PostConstruct;
 import java.util.UUID;
 
@@ -32,6 +35,8 @@ public class ExternalConfiguration {
     @Value("${my.secret.uuid}")
     private UUID uuid;
 
+    @Autowired
+    private MyConfiguration myConfiguration;
 
     @PostConstruct
     private void init() {
@@ -42,5 +47,6 @@ public class ExternalConfiguration {
         log.info("longValue: " + longValue);
         log.info("longValueRange: " + longValueRange);
         log.info("uuid: " + uuid);
+        log.info("myConfiguration:{}", myConfiguration.toString());
     }
 }
