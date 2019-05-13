@@ -17,3 +17,9 @@ spring:
   banner:
     location: classpath:banner.txt
 
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
